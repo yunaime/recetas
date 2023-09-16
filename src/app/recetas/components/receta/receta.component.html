@@ -1,0 +1,28 @@
+<div>
+  <h4>{{ receta.name }}</h4>
+  <hr>
+  <div>
+    <img class="rounded" height="300" [src]= receta.img >
+    <p class="mt-2">
+      {{receta.description.desc}}
+    </p>
+  </div>
+
+  <ingredients-table class="ingredients"  [receta]="receta"></ingredients-table>
+
+  <div>
+    <p><strong>Como preparar {{ receta.name }}</strong></p>
+    <ol>
+      <li
+      class="mt-2"
+      *ngFor="let step of receta.description.steps">
+        {{ step.description }}
+        <br>
+        <img [src]="step.imgUri">
+      </li>
+    </ol>
+  </div>
+  <div>
+    {{ receta.description.additionalInfo }}
+  </div>
+</div>

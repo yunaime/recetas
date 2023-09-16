@@ -1,0 +1,6 @@
+<h1>{{ categoryName }}</h1>
+<hr>
+<div class="d-flex">
+  <div *ngFor="let card of subCategories">
+    <recetas-card [card]="card"></recetas-card>
+</div>

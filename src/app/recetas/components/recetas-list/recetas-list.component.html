@@ -1,0 +1,5 @@
+<ul class="mt-2">
+  <li *ngFor="let item of recetas">
+    <a [routerLink]="['/recetas/byName', item.name]">{{ item.name }}</a>
+  </li>
+</ul>
