@@ -5,19 +5,19 @@ import { IngredientsTableComponent } from './components/ingredients-table/ingred
 import { RecetasRoutineModule } from './recetas-routing.module';
 import { RecetaByNameComponent } from './pages/receta-by-name/receta-by-name.component';
 import { RecetasListComponent } from './components/recetas-list/recetas-list.component';
-import { CardComponent } from './components/card/card.component';
+import { SubCategoryCardComponent } from './components/card/subcategory-card.component';
 import { RecetasByCategoryComponent } from './pages/recetas-by-category/recetas-by-category.component';
 import { RecetasBySubCategoryComponent } from './pages/recetas-by-sub-category/recetas-by-sub-category.component';
 
 @NgModule({
   declarations: [
     RecetaComponent,
-    IngredientsTableComponent,
     RecetaByNameComponent,
-    RecetasListComponent,
-    CardComponent,
-    RecetasByCategoryComponent,
     RecetasBySubCategoryComponent,
+    RecetasByCategoryComponent,
+    RecetasListComponent,
+    IngredientsTableComponent,
+    SubCategoryCardComponent,
   ],
   imports: [
     CommonModule,

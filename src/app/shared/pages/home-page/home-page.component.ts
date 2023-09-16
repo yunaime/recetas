@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Receta } from 'src/app/recetas/interfaces/receta.interface';
+import { RecetasService } from 'src/app/recetas/service/recetas.service';
 
 @Component({
   selector: 'app-home-page',
@@ -6,6 +8,12 @@ import { Component } from '@angular/core';
   styles: [
   ]
 })
-export class HomePageComponent {
-  
+export class HomePageComponent implements OnInit {
+
+  constructor(private srv: RecetasService) {}
+  ngOnInit(): void {
+    this.recetas = this.srv.recetas();
+  }
+
+  recetas!: Receta[];
 }

@@ -15,9 +15,6 @@ const routes: Routes = [
   {
     path: 'bySubCategory/:subCategory',
     component: RecetasBySubCategoryComponent
-  }, {
-    path: '**',
-    redirectTo: 'home'
   }
 ]
 

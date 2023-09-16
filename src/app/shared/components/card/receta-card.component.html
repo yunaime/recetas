@@ -1,0 +1,11 @@
+<div
+  class="card ms-2" style="width: 10rem;height: 15rem;">
+  <img [src]="card.img" style="height: 8rem;"
+   class="card-img-top" [alt]='card.name'/>
+
+  <div class="card-body">
+    <p class="card-text">
+      <a [routerLink]="['/recetas/byName', card.name]"> {{card.name}} </a>
+    </p>
+  </div>
+</div>

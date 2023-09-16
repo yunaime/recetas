@@ -1,1 +1,9 @@
-<p>home-page works!</p>
+
+<h1> Recetas </h1>
+<hr>
+<div class="d-flex">
+  <div *ngFor="let card of recetas">
+    <receta-card [card]="card"></receta-card>
+  </div>
+</div>
+

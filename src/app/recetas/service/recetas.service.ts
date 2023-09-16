@@ -39,6 +39,10 @@ export class RecetasService {
     return categories;
   }
 
+  recetas(): Receta[] {
+    return recetas;
+  }
+
   subCategories(cat: string): SubCategory[] {
     const sc = categories.find (c => c.name === cat )?.subcategories;
     console.log('Subcateories: ', sc )

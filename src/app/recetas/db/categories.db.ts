@@ -57,8 +57,11 @@ export const categories: Category[]  = [{
     name: 'Pan y bollerías',
     subcategories: [
       {
-        name: 'Bizcochos'
+        img: 'assets/bizcochos/bizcocho_de_chocolate_en_freidora_de_aire_76887_300_square.webp',
+        name: 'Bizcochos',
+        description: 'El bizcocho en , es un tipo de masa empleada en la repostería para elaborar tartas, tortas y pasteles esponjosos. Los ingredientes básicos son la harina (generalmente de trigo), los huevos enteros y el azúcar o la sal. Hay innumerables recetas deliciosas de bizcocho que además de ser fáciles de hacer son económicas.'
       }, {
+        img: 'assets/galletas/galletas_maria_caseras_75913_600.webp',
         name: 'Galletas',
         description: '  La galleta es un pastel horneado hecho con pasta de harina, mantequilla, azúcar y huevos. Además de estos, las galletas pueden incorporar una gran variedad de ingredientes tanto dulces como saladas, simple o rellenas o con frutos secos, chocolate, etc.'
       }

@@ -2,12 +2,12 @@ import { Component, Input } from '@angular/core';
 import { SubCategory } from '../../interfaces/subcategory.interface';
 
 @Component({
-  selector: 'recetas-card',
-  templateUrl: './card.component.html',
+  selector: 'subcategory-card',
+  templateUrl: './subcategory-card.component.html',
   styles: [
   ]
 })
-export class CardComponent {
+export class SubCategoryCardComponent {
 
   @Input()
   card!: SubCategory;

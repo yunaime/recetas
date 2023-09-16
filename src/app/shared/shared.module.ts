@@ -5,21 +5,25 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { HeaderBarComponent } from './components/header-bar/header-bar.component';
+import { RecetaCardComponent } from './components/card/receta-card.component';
 
 @NgModule({
   declarations: [
     HomePageComponent,
     SideBarComponent,
     HeaderBarComponent,
+    RecetaCardComponent
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    AppRoutingModule,
   ],
   exports: [
     SideBarComponent,
-    AppRoutingModule,
-    HeaderBarComponent
+    HeaderBarComponent,
+    RecetaCardComponent,
+    HomePageComponent
   ]
 })
 export class SharedModule { }
