@@ -1,11 +1,18 @@
 <div
-class="card ms-2" style="width: 10rem;height: 15rem;">
+  class="card ms-2"
+  style="width: 10rem;height: 15rem;">
+
   <img [src]="card.img" style="height: 8rem;"
-   class="card-img-top" [alt]='card.name'/>
+   class="card-img-top"
+   data-mdb-ripple-color="light"
+   [alt]='card.name'
+   [routerLink]="['/recetas/bySubCategory', card.name]"
+   />
 
   <div class="card-body">
     <p class="card-text">
-      <a [routerLink]="['/recetas/bySubCategory', card.name]"> {{card.name}} </a>
+      <!-- <a [routerLink]="['/recetas/bySubCategory', card.name]"> {{card.name}} </a> -->
+      {{ card.name }}
     </p>
   </div>
 </div>

@@ -1,26 +1,25 @@
-  <table class="table table-bordered border-primary ml-2">
+  <table class="table table-bordered border-primary ml-2" style="width: auto;">
     <thead>
-      <th>
         <tr>
-          <td> {{receta.description.comensales}} comensales
-              | {{receta.description.time}} | Plato {{receta.description.plateType}} |
-              Dificultad {{ receta.description.dificulty }}
-          </td>
+          <th>
+            {{receta.description.comensales}} comensales
+            | {{receta.description.time}} | Plato {{receta.description.plateType}} |
+            Dificultad {{ receta.description.dificulty }}
+          </th>
         </tr>
-      </th>
     </thead>
     <tbody class="table-group-divider">
       <tr>
         <th>
-          <strong>Ingredientes para hacer: {{ receta.name }}</strong>
-          <ul>
-            <td>
-              <li *ngFor="let item of receta.description.ingredients">
-                <input type="checkbox"> {{ item }}
-              </li>
-            </td>
-          </ul>
+          <strong>Ingredientes para hacer {{ receta.name }}:</strong>
         </th>
+      </tr>
+      <tr>
+        <td>
+            <div *ngFor="let item of receta.description.ingredients">
+              <input type="checkbox"> {{ item }}
+            </div>
+          </td>
       </tr>
     </tbody>
   </table>

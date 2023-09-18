@@ -21,38 +21,45 @@ export const categories: Category[]  = [{
         }
       ]
   },
-  // {
-  //   name: 'Arroces y cereales',
-  // }, {
-  //   name: 'Aves y caza',
-  // }, {
-  //   name: 'Cócteles y bebidas',
-  // }, {
-  //   name: 'Ensaladas',
-  // },{
-  //   name: 'Huevos y lácteos',
-  // }, {
-  //   name: 'Mariscos',
-  // },
-  // {
-  //   name: 'Pastas',
-  // },{
-  //   name: 'Postres',
-  //   url: '#'
-  // }, {
-  //   name: 'Salsas',
-  //   url: '#'
-  // }, {
-  //   name: 'Sopas y cremas',
-  //   url: '#'
-  // }, {
-  //   name: 'Verduras',
-  //   url: '#'
-  // },
-  // {
-  //   name: 'Pezcados',
-  //   url: '#'
-  // },
+  {
+    name: 'Arroces y cereales',
+    subcategories: []
+  }, {
+    name: 'Aves y caza',
+    subcategories: []
+  }, {
+    name: 'Cócteles y bebidas',
+    subcategories: []
+  }, {
+    name: 'Ensaladas',
+    subcategories: []
+  },{
+    name: 'Huevos y lácteos',
+    subcategories: []
+  }, {
+    name: 'Mariscos',
+    subcategories: []
+  },
+  {
+    name: 'Pastas',
+    subcategories: []
+  },{
+    name: 'Postres',
+    subcategories: []
+  }, {
+    name: 'Salsas',
+    subcategories: []
+  }, {
+    name: 'Sopas y cremas',
+    subcategories: []
+  }, {
+    name: 'Verduras',
+    subcategories: []
+  },
+  {
+    name: 'Pezcados',
+    subcategories: []
+  },
   {
     name: 'Pan y bollerías',
     subcategories: [
@@ -67,17 +74,17 @@ export const categories: Category[]  = [{
       }
     ]
   },
-  // {
-  //   name: 'Legumbres',
-  //   url: '#'
-  // },{
-  //   name: 'Guisos y Potages',
-  //   url: '#'
-  // }, {
-  //   name: 'Consejos de cocina',
-  //   url: '#'
-  // },{
-  //   name: 'Carne',
-  //   url: '#'
-  // }
+  {
+    name: 'Legumbres',
+    subcategories: []
+  },{
+    name: 'Guisos y Potages',
+    subcategories: []
+  }, {
+    name: 'Consejos de cocina',
+    subcategories: []
+  },{
+    name: 'Carne',
+    subcategories: []
+  }
 ]
