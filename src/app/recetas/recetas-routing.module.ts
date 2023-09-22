@@ -6,15 +6,18 @@ import { RecetasBySubCategoryComponent } from './pages/recetas-by-sub-category/r
 
 const routes: Routes = [
     {
-    path: 'byName/:name',
+    path: 'by-name/:name',
     component: RecetaByNameComponent
-  },{
-    path: 'byCategory/:category',
+  }, {
+    path: 'by-category/:category',
     component: RecetasByCategoryComponent
   },
   {
-    path: 'bySubCategory/:subCategory',
+    path: 'by-subCategory/:subCategory',
     component: RecetasBySubCategoryComponent
+  }, {
+    path: "**",
+    redirectTo: 'home'
   }
 ]
 

@@ -1,6 +1,7 @@
-<h1> Recetas </h1>
+<shared-search-box (recetaEmiter)="showRecipes($event)"></shared-search-box>
+<h1> Recetas ( {{ recetas.length }} )</h1>
 <hr>
-<div class="row">
+<div class="d-flex row">
   <div
     class="col-md-2 col-sm-6"
     *ngFor="let card of recetas">

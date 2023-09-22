@@ -1,17 +1,17 @@
 <div
   class="card ms-2"
+  [routerLink]="['/recetas/by-subCategory', card.name]"
   style="width: 10rem;height: 15rem;">
 
-  <img [src]="card.img" style="height: 8rem;"
-   class="card-img-top"
+  <img [src]="card.img"
+   style="height: 10rem;"
+   class="card-img-top rounded"
    data-mdb-ripple-color="light"
-   [alt]='card.name'
-   [routerLink]="['/recetas/bySubCategory', card.name]"
-   />
+   [alt]='card.name'/>
 
   <div class="card-body">
     <p class="card-text">
-      <!-- <a [routerLink]="['/recetas/bySubCategory', card.name]"> {{card.name}} </a> -->
+      <!-- <a [routerLink]="['/recetas/by-subCategory', card.name]"> {{card.name}} </a> -->
       {{ card.name }}
     </p>
   </div>

@@ -16,4 +16,8 @@ export class HomePageComponent implements OnInit {
   }
 
   recetas!: Receta[];
+
+  showRecipes(receipes: Receta[]) {
+    this.recetas = receipes;
+  }
 }

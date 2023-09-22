@@ -1,19 +1,17 @@
 <div
-  class="card ms-2 mt-2 me-2 bg-dark"
-  style="width: 10rem;height: 15rem;">
+  class="card ms-2 bg-dark"
+  style="width: 10rem; height: 15rem;">
 
-  <div class="hover-zoom">
     <img
       [src]="card.img"
-      style="height: 8rem;"
+      style="height: 10rem;"
       class="card-img-top"
       data-mdb-ripple-color="light"
       [alt]='card.name'/>
-  </div>
 
   <div class="card-body">
     <p class="card-text">
-      <a [routerLink]="['/recetas/byName', card.name]"> {{card.name}} </a>
+      <a [routerLink]="['/recetas/by-name', card.name]"> {{card.name}} </a>
     </p>
   </div>
 </div>
